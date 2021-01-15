@@ -18,12 +18,19 @@ class App extends React.Component {
 		this.setState((prevState) => ({ amountRow: prevState.amountRow + 1 }));
 	};
 
+	//changes state of col to add a col
+	addCol = () => {
+		this.setState((prevState) => ({ amountCol: prevState.amountCol + 1 }));
+	};
 	render() {
 		return (
 			<div className="App">
 				<h1 className="container">Dom Challenge Through React</h1>
 				<button type="button" onClick={() => this.addRow()}>
 					Add Row
+				</button>
+				<button type="button" onClick={() => this.addCol()}>
+					Add Col
 				</button>
 				<div className="container">
 					<table>
