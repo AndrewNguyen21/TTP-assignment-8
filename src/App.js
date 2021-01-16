@@ -32,6 +32,14 @@ class App extends React.Component {
 				<button type="button" onClick={() => this.addCol()}>
 					Add Col
 				</button>
+				<select name="color" id="color" onChange={this.selectedColor}>
+					<option value>Select Color</option>
+					<option value="#800000">Red</option>
+					<option value="#87ceeb">Blue</option>
+					<option value="#999900">Green</option>
+					<option value="#ffd500">Yellow</option>
+					<option value="#ad0aaf">Purple</option>
+				</select>
 				<div className="container">
 					<table>
 						<tbody>
