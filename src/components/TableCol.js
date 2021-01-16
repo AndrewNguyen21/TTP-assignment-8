@@ -5,7 +5,7 @@ class TableCol extends Component {
 	addCol = () => {
 		let cols = [];
 		for (let i = 1; i <= this.props.amountCol; i++) {
-			cols.push(<td key={i}></td>);
+			cols.push(<td key={i} onClick={this.props.changeColor}></td>);
 		}
 		return cols;
 	};

@@ -8,6 +8,8 @@ class Table extends Component {
 			<TableRow
 				amountRow={this.props.amountRow}
 				amountCol={this.props.amountCol}
+				selectedColor={this.props.selectedColor}
+				changeColor={this.props.changeColor}
 			/>
 		);
 	}

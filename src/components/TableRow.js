@@ -8,7 +8,10 @@ class TableRow extends Component {
 		for (let i = 1; i <= this.props.amountRow; i++) {
 			rows.push(
 				<tr key={i}>
-					<TableCol amountCol={this.props.amountCol} />
+					<TableCol
+						amountCol={this.props.amountCol}
+						changeColor={this.props.changeColor}
+					/>
 				</tr>
 			);
 		}
